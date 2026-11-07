@@ -1,0 +1,3 @@
+dataset,pos_def_median,neg_def_median,pos_auto_median,neg_auto_median,E_def_over_auto_%,n_test_flows,deferred_%,E_deferred_median,E_auto_median,E_MWU_p,K_deferred_median,K_auto_median,K_MWU_p,top10_share_%,spearman_imp_def_vs_auto
+CICAndMal2017,3.000714,2.9380815,3.2549462,3.4493325,77.304146,14997,20.424084816963394,5.8955755,7.6264677,0.0,0.43506932,0.20592755,0.0,50.174873,0.9833951868997972
+CIC-AAGM2017,2.1848824,2.0042493,2.479606,2.7208128,66.880745,20000,19.31,4.149185,6.203856,0.0,0.41929573,0.16052832,0.0,46.61942,0.9700466632101328

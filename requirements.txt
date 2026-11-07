@@ -1,0 +1,9 @@
+numpy
+pandas
+pyarrow
+scipy
+scikit-learn==1.9.1
+xgboost==3.4.1
+lightgbm==4.7.0
+shap==0.54.1
+matplotlib

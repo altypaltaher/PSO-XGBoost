@@ -1,0 +1,2 @@
+dataset,protocol,features,n,error_rate,auc_conf_only,auc_conf_plus_shap,delta,delta_ci_lo,delta_ci_hi,corr_K_conf,top10_share
+aagm,flow,main,20000,0.10675,0.8465146155363771,0.8437364543207545,-0.0027781612156225766,-0.004395213519135077,-0.0012443817415414228,-0.8486214448348133,45.39978

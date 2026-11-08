@@ -1,0 +1,240 @@
+andmal app main 0 full (41900, 70) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6187 {'learning_rate': 0.01, 'max_depth': 12, 'n_estimators': 231, 'subsample': 0.6365691568667632, 'colsample_bytree': 0.5535623471155154} (8.4 min)
+  f0 PSO-LightGBM: inner AUC 0.6154 {'learning_rate': 0.054495103564710226, 'num_leaves': 20, 'n_estimators': 247, 'subsample': 0.7614537429396675, 'colsample_bytree': 0.681839012911798} (2.1 min)
+  f0 PSO-RF: inner AUC 0.6153 {'n_estimators': 203, 'max_depth': 13, 'max_features': 0.27539858876010476, 'min_samples_leaf': 3} (12.9 min)
+  f0 PSO-ExtraTrees: inner AUC 0.6100 {'n_estimators': 126, 'max_depth': 15, 'max_features': 0.5455861551338844, 'min_samples_leaf': 2} (4.9 min)
+  f0 RS-XGBoost: inner AUC 0.6170 {'learning_rate': 0.01596950334578271, 'max_depth': 12, 'n_estimators': 341, 'subsample': 0.6061695553391381, 'colsample_bytree': 0.5909124836035503} (3.8 min)
+  f0 TPE-XGBoost: inner AUC 0.6189 {'learning_rate': 0.027703742551180494, 'max_depth': 7, 'n_estimators': 388, 'subsample': 0.9221859322613032, 'colsample_bytree': 0.511970747239967} (5.6 min)
+andmal_app_main_r0_f0_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (38.3 min)
+  f1 PSO-XGBoost: inner AUC 0.6280 {'learning_rate': 0.011487569228692516, 'max_depth': 8, 'n_estimators': 216, 'subsample': 0.8181868387857614, 'colsample_bytree': 0.9891020670410031} (4.8 min)
+  f1 PSO-LightGBM: inner AUC 0.6274 {'learning_rate': 0.01, 'num_leaves': 136, 'n_estimators': 168, 'subsample': 0.7867297948371557, 'colsample_bytree': 1.0} (4.3 min)
+  f1 PSO-RF: inner AUC 0.6204 {'n_estimators': 196, 'max_depth': 13, 'max_features': 0.10223248050825107, 'min_samples_leaf': 3} (5.1 min)
+  f1 PSO-ExtraTrees: inner AUC 0.6141 {'n_estimators': 166, 'max_depth': 18, 'max_features': 1.0, 'min_samples_leaf': 3} (4.7 min)
+  f1 RS-XGBoost: inner AUC 0.6280 {'learning_rate': 0.011487569228692516, 'max_depth': 8, 'n_estimators': 216, 'subsample': 0.8181868387857614, 'colsample_bytree': 0.9891020670410031} (4.5 min)
+  f1 TPE-XGBoost: inner AUC 0.6280 {'learning_rate': 0.011487569228692516, 'max_depth': 8, 'n_estimators': 216, 'subsample': 0.8181868387857614, 'colsample_bytree': 0.9891020670410031} (4.3 min)
+andmal_app_main_r0_f1_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (28.2 min)
+  f2 PSO-XGBoost: inner AUC 0.6193 {'learning_rate': 0.01, 'max_depth': 10, 'n_estimators': 382, 'subsample': 0.5308625131923064, 'colsample_bytree': 0.5372626587518081} (6.0 min)
+  f2 PSO-LightGBM: inner AUC 0.6196 {'learning_rate': 0.01, 'num_leaves': 170, 'n_estimators': 186, 'subsample': 0.7870298985141669, 'colsample_bytree': 0.9896352569777793} (3.2 min)
+  f2 PSO-RF: inner AUC 0.6150 {'n_estimators': 202, 'max_depth': 15, 'max_features': 0.45609837746404686, 'min_samples_leaf': 5} (21.3 min)
+  f2 PSO-ExtraTrees: inner AUC 0.6049 {'n_estimators': 100, 'max_depth': 16, 'max_features': 1.0, 'min_samples_leaf': 3} (7.0 min)
+  f2 RS-XGBoost: inner AUC 0.6182 {'learning_rate': 0.06304207901476418, 'max_depth': 4, 'n_estimators': 349, 'subsample': 0.5242270744011126, 'colsample_bytree': 0.7497144475801356} (3.7 min)
+  f2 TPE-XGBoost: inner AUC 0.6192 {'learning_rate': 0.019593690160134007, 'max_depth': 8, 'n_estimators': 368, 'subsample': 0.8972617122569551, 'colsample_bytree': 0.9329810431873915} (3.0 min)
+andmal_app_main_r0_f2_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (44.7 min)
+  f3 PSO-XGBoost: inner AUC 0.6131 {'learning_rate': 0.12549175151066244, 'max_depth': 4, 'n_estimators': 108, 'subsample': 0.7371797594836578, 'colsample_bytree': 0.6105322097909138} (1.2 min)
+  f3 PSO-LightGBM: inner AUC 0.6163 {'learning_rate': 0.014590258825622412, 'num_leaves': 35, 'n_estimators': 131, 'subsample': 0.8010778119484327, 'colsample_bytree': 0.6427606909825032} (1.4 min)
+andmal app main 0 full (41900, 70) malware 0.189
+  f3 PSO-XGBoost: inner AUC 0.6131 {'learning_rate': 0.12549175151066244, 'max_depth': 4, 'n_estimators': 108, 'subsample': 0.7371797594836578, 'colsample_bytree': 0.6105322097909138} (1.1 min)
+  f3 PSO-LightGBM: inner AUC 0.6163 {'learning_rate': 0.014590258825622412, 'num_leaves': 35, 'n_estimators': 131, 'subsample': 0.8010778119484327, 'colsample_bytree': 0.6427606909825032} (1.3 min)
+  f3 PSO-RF: inner AUC 0.6105 {'n_estimators': 282, 'max_depth': 12, 'max_features': 0.3793813657107313, 'min_samples_leaf': 3} (19.0 min)
+  f3 PSO-ExtraTrees: inner AUC 0.6046 {'n_estimators': 195, 'max_depth': 16, 'max_features': 0.9409685561371467, 'min_samples_leaf': 2} (6.5 min)
+  f3 RS-XGBoost: inner AUC 0.6169 {'learning_rate': 0.028627329717578955, 'max_depth': 7, 'n_estimators': 344, 'subsample': 0.7787676869112742, 'colsample_bytree': 0.9939578214107327} (3.8 min)
+  f3 TPE-XGBoost: inner AUC 0.6159 {'learning_rate': 0.061073900078802645, 'max_depth': 6, 'n_estimators': 103, 'subsample': 0.7445270415317636, 'colsample_bytree': 0.6169876921111421} (1.5 min)
+andmal_app_main_r0_f3_full.npz saved: train=20111 cal=8380 calseen=5028 te=8381 (33.6 min)
+  f4 PSO-XGBoost: inner AUC 0.6053 {'learning_rate': 0.16044485067041825, 'max_depth': 3, 'n_estimators': 306, 'subsample': 1.0, 'colsample_bytree': 1.0} (1.0 min)
+  f4 PSO-LightGBM: inner AUC 0.6055 {'learning_rate': 0.023116345755033362, 'num_leaves': 85, 'n_estimators': 89, 'subsample': 0.8679404211579311, 'colsample_bytree': 0.7035257225365157} (1.1 min)
+  f4 PSO-RF: inner AUC 0.6064 {'n_estimators': 288, 'max_depth': 14, 'max_features': 0.38498313743079376, 'min_samples_leaf': 1} (22.6 min)
+  f4 PSO-ExtraTrees: inner AUC 0.5979 {'n_estimators': 300, 'max_depth': 17, 'max_features': 0.8399547937906865, 'min_samples_leaf': 1} (10.9 min)
+  f4 RS-XGBoost: inner AUC 0.6052 {'learning_rate': 0.055190201226686345, 'max_depth': 7, 'n_estimators': 72, 'subsample': 0.6053229698785356, 'colsample_bytree': 0.8480475677963772} (3.3 min)
+  f4 TPE-XGBoost: inner AUC 0.6051 {'learning_rate': 0.01585537242139445, 'max_depth': 7, 'n_estimators': 345, 'subsample': 0.6987433818687875, 'colsample_bytree': 0.7590561973058055} (2.2 min)
+andmal_app_main_r0_f4_full.npz saved: train=20112 cal=8380 calseen=5029 te=8379 (41.7 min)
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6357 {'learning_rate': 0.01, 'max_depth': 10, 'n_estimators': 170, 'subsample': 0.8053304555333094, 'colsample_bytree': 0.7525951157243808} (8.7 min)
+andmal_flow_main_r0_f0_small.npz saved: train=25140 cal=8380 te=8380 (9.2 min)
+  f1 PSO-XGBoost: inner AUC 0.6206 {'learning_rate': 0.025086430427202697, 'max_depth': 9, 'n_estimators': 246, 'subsample': 0.8275886264369952, 'colsample_bytree': 1.0} (6.2 min)
+andmal_flow_main_r0_f1_small.npz saved: train=25140 cal=8380 te=8380 (6.7 min)
+  f2 PSO-XGBoost: inner AUC 0.6302 {'learning_rate': 0.06165765517475392, 'max_depth': 5, 'n_estimators': 195, 'subsample': 1.0, 'colsample_bytree': 0.5564525868609168} (1.6 min)
+andmal_flow_main_r0_f2_small.npz saved: train=25140 cal=8380 te=8380 (2.2 min)
+  f3 PSO-XGBoost: inner AUC 0.6288 {'learning_rate': 0.059030429886733904, 'max_depth': 10, 'n_estimators': 75, 'subsample': 1.0, 'colsample_bytree': 0.6345206288649229} (2.8 min)
+andmal_flow_main_r0_f3_small.npz saved: train=25140 cal=8380 te=8380 (3.4 min)
+  f4 PSO-XGBoost: inner AUC 0.6280 {'learning_rate': 0.10286501424002065, 'max_depth': 5, 'n_estimators': 134, 'subsample': 0.8851461704902704, 'colsample_bytree': 0.9637065259267948} (1.3 min)
+andmal_flow_main_r0_f4_small.npz saved: train=25140 cal=8380 te=8380 (1.8 min)
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6186 {'learning_rate': 0.01, 'max_depth': 12, 'n_estimators': 245, 'subsample': 0.6004910805270177, 'colsample_bytree': 0.6108824191015337} (7.3 min)
+andmal_app_ports_r0_f0_small.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (7.8 min)
+  f1 PSO-XGBoost: inner AUC 0.6305 {'learning_rate': 0.01, 'max_depth': 10, 'n_estimators': 176, 'subsample': 0.8761633884194834, 'colsample_bytree': 1.0} (4.7 min)
+andmal_app_ports_r0_f1_small.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (5.2 min)
+  f2 PSO-XGBoost: inner AUC 0.6227 {'learning_rate': 0.01, 'max_depth': 11, 'n_estimators': 398, 'subsample': 0.7241078299310876, 'colsample_bytree': 0.5} (6.7 min)
+andmal_app_ports_r0_f2_small.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (7.2 min)
+andmal app main 0 full (41900, 70) malware 0.189
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+  f3 PSO-XGBoost: inner AUC 0.6179 {'learning_rate': 0.01, 'max_depth': 8, 'n_estimators': 291, 'subsample': 0.6617372328677515, 'colsample_bytree': 0.6302177024846138} (6.3 min)
+andmal_app_ports_r0_f3_small.npz saved: train=20111 cal=8380 calseen=5028 te=8381 (6.7 min)
+  f4 PSO-XGBoost: inner AUC 0.6064 {'learning_rate': 0.08001898624680193, 'max_depth': 4, 'n_estimators': 312, 'subsample': 0.789456909758709, 'colsample_bytree': 0.8255243619411596} (1.5 min)
+andmal_app_ports_r0_f4_small.npz saved: train=20112 cal=8380 calseen=5029 te=8379 (2.0 min)
+DONE andmal app ports 0 small
+andmal app noinitwin 0 small (41900, 68) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6041 {'learning_rate': 0.01, 'max_depth': 12, 'n_estimators': 260, 'subsample': 0.5, 'colsample_bytree': 0.6425204316653195} (7.2 min)
+andmal_app_noinitwin_r0_f0_small.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (7.6 min)
+  f1 PSO-XGBoost: inner AUC 0.6112 {'learning_rate': 0.01, 'max_depth': 10, 'n_estimators': 216, 'subsample': 0.7655126177224947, 'colsample_bytree': 1.0} (4.4 min)
+andmal_app_noinitwin_r0_f1_small.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (4.8 min)
+  f2 PSO-XGBoost: inner AUC 0.6042 {'learning_rate': 0.01, 'max_depth': 10, 'n_estimators': 169, 'subsample': 0.5063520653369518, 'colsample_bytree': 0.5} (3.1 min)
+andmal_app_noinitwin_r0_f2_small.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (3.5 min)
+  f3 PSO-XGBoost: inner AUC 0.5989 {'learning_rate': 0.07719705049918438, 'max_depth': 5, 'n_estimators': 64, 'subsample': 0.8702994445547957, 'colsample_bytree': 0.9347532772606522} (0.9 min)
+andmal_app_noinitwin_r0_f3_small.npz saved: train=20111 cal=8380 calseen=5028 te=8381 (1.4 min)
+  f4 PSO-XGBoost: inner AUC 0.5948 {'learning_rate': 0.06589423837818761, 'max_depth': 4, 'n_estimators': 134, 'subsample': 0.9214583400922471, 'colsample_bytree': 0.8859461090397501} (1.0 min)
+andmal_app_noinitwin_r0_f4_small.npz saved: train=20112 cal=8380 calseen=5029 te=8379 (1.4 min)
+DONE andmal app noinitwin 0 small
+andmal app main 1 full (41900, 70) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6162 {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 102, 'subsample': 0.8218488233885611, 'colsample_bytree': 0.9227250038592782} (3.7 min)
+  f0 PSO-LightGBM: inner AUC 0.6135 {'learning_rate': 0.01, 'num_leaves': 99, 'n_estimators': 68, 'subsample': 0.809670901779617, 'colsample_bytree': 0.9383821928610778} (2.8 min)
+  f0 PSO-RF: inner AUC 0.6105 {'n_estimators': 129, 'max_depth': 13, 'max_features': 0.30660000161528167, 'min_samples_leaf': 8} (10.8 min)
+  f0 PSO-ExtraTrees: inner AUC 0.6022 {'n_estimators': 217, 'max_depth': 16, 'max_features': 0.6385943335393511, 'min_samples_leaf': 1} (8.1 min)
+andmal_app_main_r1_f0_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (25.9 min)
+  f1 PSO-XGBoost: inner AUC 0.6196 {'learning_rate': 0.01, 'max_depth': 8, 'n_estimators': 400, 'subsample': 0.6826025385944068, 'colsample_bytree': 0.8021274673578946} (2.7 min)
+  f1 PSO-LightGBM: inner AUC 0.6162 {'learning_rate': 0.01, 'num_leaves': 182, 'n_estimators': 184, 'subsample': 0.6982306445218367, 'colsample_bytree': 0.8455746500080121} (3.2 min)
+  f1 PSO-RF: inner AUC 0.6140 {'n_estimators': 296, 'max_depth': 13, 'max_features': 0.31395052201082313, 'min_samples_leaf': 2} (18.0 min)
+  f1 PSO-ExtraTrees: inner AUC 0.6041 {'n_estimators': 132, 'max_depth': 19, 'max_features': 0.8787113087696365, 'min_samples_leaf': 2} (4.8 min)
+andmal_app_main_r1_f1_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (29.1 min)
+  f2 PSO-XGBoost: inner AUC 0.6146 {'learning_rate': 0.030043261696515243, 'max_depth': 11, 'n_estimators': 86, 'subsample': 0.7176855265621915, 'colsample_bytree': 0.8270093753689862} (3.3 min)
+  f2 PSO-LightGBM: inner AUC 0.6144 {'learning_rate': 0.01, 'num_leaves': 120, 'n_estimators': 92, 'subsample': 0.8038798325297561, 'colsample_bytree': 0.7276370400832752} (2.1 min)
+  f2 PSO-RF: inner AUC 0.6125 {'n_estimators': 295, 'max_depth': 14, 'max_features': 0.28502648259085017, 'min_samples_leaf': 1} (18.7 min)
+  f2 PSO-ExtraTrees: inner AUC 0.6108 {'n_estimators': 300, 'max_depth': 14, 'max_features': 0.43352760594768713, 'min_samples_leaf': 2} (6.1 min)
+andmal_app_main_r1_f2_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (30.6 min)
+  f3 PSO-XGBoost: inner AUC 0.6233 {'learning_rate': 0.022054523827452842, 'max_depth': 6, 'n_estimators': 394, 'subsample': 0.582398442170424, 'colsample_bytree': 1.0} (3.2 min)
+  f3 PSO-LightGBM: inner AUC 0.6234 {'learning_rate': 0.01, 'num_leaves': 63, 'n_estimators': 185, 'subsample': 0.6953686393378116, 'colsample_bytree': 1.0} (1.9 min)
+andmal app main 0 full (41900, 70) malware 0.189
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+DONE andmal app ports 0 small
+andmal app noinitwin 0 small (41900, 68) malware 0.189
+DONE andmal app noinitwin 0 small
+andmal app main 1 full (41900, 70) malware 0.189
+  f3 PSO-XGBoost: inner AUC 0.6233 {'learning_rate': 0.022054523827452842, 'max_depth': 6, 'n_estimators': 394, 'subsample': 0.582398442170424, 'colsample_bytree': 1.0} (3.4 min)
+  f3 PSO-LightGBM: inner AUC 0.6234 {'learning_rate': 0.01, 'num_leaves': 63, 'n_estimators': 185, 'subsample': 0.6953686393378116, 'colsample_bytree': 1.0} (2.0 min)
+  f3 PSO-RF: inner AUC 0.6175 {'n_estimators': 233, 'max_depth': 13, 'max_features': 0.4915969725884425, 'min_samples_leaf': 5} (24.9 min)
+  f3 PSO-ExtraTrees: inner AUC 0.6042 {'n_estimators': 262, 'max_depth': 18, 'max_features': 0.7780147279404456, 'min_samples_leaf': 6} (10.4 min)
+andmal_app_main_r1_f3_full.npz saved: train=20112 cal=8379 calseen=5028 te=8381 (41.2 min)
+  f4 PSO-XGBoost: inner AUC 0.6247 {'learning_rate': 0.01, 'max_depth': 11, 'n_estimators': 245, 'subsample': 0.6243829257511218, 'colsample_bytree': 1.0} (7.2 min)
+  f4 PSO-LightGBM: inner AUC 0.6242 {'learning_rate': 0.01, 'num_leaves': 160, 'n_estimators': 184, 'subsample': 0.6481084134078218, 'colsample_bytree': 0.6590594845170951} (3.9 min)
+  f4 PSO-RF: inner AUC 0.6214 {'n_estimators': 300, 'max_depth': 17, 'max_features': 0.38433062508672267, 'min_samples_leaf': 3} (28.8 min)
+  f4 PSO-ExtraTrees: inner AUC 0.6140 {'n_estimators': 300, 'max_depth': 19, 'max_features': 0.7204329010958556, 'min_samples_leaf': 3} (10.9 min)
+andmal_app_main_r1_f4_full.npz saved: train=20112 cal=8380 calseen=5029 te=8379 (51.3 min)
+DONE andmal app main 1 full
+andmal app main 2 full (41900, 70) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6170 {'learning_rate': 0.03377314558369309, 'max_depth': 7, 'n_estimators': 175, 'subsample': 1.0, 'colsample_bytree': 1.0} (4.2 min)
+  f0 PSO-LightGBM: inner AUC 0.6151 {'learning_rate': 0.03290262329399552, 'num_leaves': 85, 'n_estimators': 50, 'subsample': 0.7665422754407901, 'colsample_bytree': 0.7008019749189773} (1.7 min)
+andmal app main 0 full (41900, 70) malware 0.189
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+DONE andmal app ports 0 small
+andmal app noinitwin 0 small (41900, 68) malware 0.189
+DONE andmal app noinitwin 0 small
+andmal app main 1 full (41900, 70) malware 0.189
+DONE andmal app main 1 full
+andmal app main 2 full (41900, 70) malware 0.189
+  f0 PSO-XGBoost: inner AUC 0.6170 {'learning_rate': 0.03377314558369309, 'max_depth': 7, 'n_estimators': 175, 'subsample': 1.0, 'colsample_bytree': 1.0} (3.9 min)
+  f0 PSO-LightGBM: inner AUC 0.6151 {'learning_rate': 0.03290262329399552, 'num_leaves': 85, 'n_estimators': 50, 'subsample': 0.7665422754407901, 'colsample_bytree': 0.7008019749189773} (1.7 min)
+  f0 PSO-RF: inner AUC 0.6121 {'n_estimators': 250, 'max_depth': 13, 'max_features': 0.5, 'min_samples_leaf': 6} (22.4 min)
+  f0 PSO-ExtraTrees: inner AUC 0.5981 {'n_estimators': 107, 'max_depth': 30, 'max_features': 0.1342952651447543, 'min_samples_leaf': 8} (2.0 min)
+andmal_app_main_r2_f0_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (30.5 min)
+  f1 PSO-XGBoost: inner AUC 0.6078 {'learning_rate': 0.08622432741202182, 'max_depth': 5, 'n_estimators': 50, 'subsample': 0.7846697895474206, 'colsample_bytree': 0.5066570000247199} (1.0 min)
+  f1 PSO-LightGBM: inner AUC 0.6132 {'learning_rate': 0.01, 'num_leaves': 103, 'n_estimators': 252, 'subsample': 0.6035716835190854, 'colsample_bytree': 0.8515682647647588} (5.7 min)
+  f1 PSO-RF: inner AUC 0.6126 {'n_estimators': 188, 'max_depth': 13, 'max_features': 0.5, 'min_samples_leaf': 1} (20.5 min)
+  f1 PSO-ExtraTrees: inner AUC 0.6096 {'n_estimators': 139, 'max_depth': 20, 'max_features': 0.6444368439876035, 'min_samples_leaf': 2} (6.4 min)
+andmal_app_main_r2_f1_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (34.1 min)
+  f2 PSO-XGBoost: inner AUC 0.6109 {'learning_rate': 0.07862658501686048, 'max_depth': 4, 'n_estimators': 248, 'subsample': 0.8129125319964196, 'colsample_bytree': 0.5667904552412178} (1.2 min)
+  f2 PSO-LightGBM: inner AUC 0.6189 {'learning_rate': 0.01, 'num_leaves': 82, 'n_estimators': 225, 'subsample': 0.590557609124763, 'colsample_bytree': 0.8225309724565297} (2.0 min)
+  f2 PSO-RF: inner AUC 0.6170 {'n_estimators': 209, 'max_depth': 13, 'max_features': 0.37135163147202505, 'min_samples_leaf': 2} (23.9 min)
+  f2 PSO-ExtraTrees: inner AUC 0.6153 {'n_estimators': 295, 'max_depth': 19, 'max_features': 0.9685317994277595, 'min_samples_leaf': 1} (12.6 min)
+andmal_app_main_r2_f2_full.npz saved: train=20112 cal=8380 calseen=5028 te=8380 (40.1 min)
+  f3 PSO-XGBoost: inner AUC 0.6263 {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 319, 'subsample': 0.7349037382340415, 'colsample_bytree': 1.0} (8.7 min)
+  f3 PSO-LightGBM: inner AUC 0.6253 {'learning_rate': 0.01, 'num_leaves': 68, 'n_estimators': 282, 'subsample': 0.6773087661436186, 'colsample_bytree': 0.5296682185408933} (2.5 min)
+andmal app main 0 full (41900, 70) malware 0.189
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+DONE andmal app ports 0 small
+andmal app noinitwin 0 small (41900, 68) malware 0.189
+DONE andmal app noinitwin 0 small
+andmal app main 1 full (41900, 70) malware 0.189
+DONE andmal app main 1 full
+andmal app main 2 full (41900, 70) malware 0.189
+  f3 PSO-XGBoost: inner AUC 0.6263 {'learning_rate': 0.01, 'max_depth': 9, 'n_estimators': 319, 'subsample': 0.7349037382340415, 'colsample_bytree': 1.0} (9.1 min)
+  f3 PSO-LightGBM: inner AUC 0.6253 {'learning_rate': 0.01, 'num_leaves': 68, 'n_estimators': 282, 'subsample': 0.6773087661436186, 'colsample_bytree': 0.5296682185408933} (2.5 min)
+  f3 PSO-RF: inner AUC 0.6193 {'n_estimators': 281, 'max_depth': 11, 'max_features': 0.3075074754014294, 'min_samples_leaf': 2} (19.8 min)
+  f3 PSO-ExtraTrees: inner AUC 0.6063 {'n_estimators': 127, 'max_depth': 15, 'max_features': 1.0, 'min_samples_leaf': 5} (9.2 min)
+andmal_app_main_r2_f3_full.npz saved: train=20112 cal=8379 calseen=5028 te=8381 (41.0 min)
+  f4 PSO-XGBoost: inner AUC 0.6212 {'learning_rate': 0.2247973560010288, 'max_depth': 4, 'n_estimators': 117, 'subsample': 0.901503297540082, 'colsample_bytree': 0.5592039383973353} (1.3 min)
+  f4 PSO-LightGBM: inner AUC 0.6328 {'learning_rate': 0.01, 'num_leaves': 70, 'n_estimators': 339, 'subsample': 0.7072751792534206, 'colsample_bytree': 0.8391820147404221} (3.1 min)
+  f4 PSO-RF: inner AUC 0.6262 {'n_estimators': 300, 'max_depth': 15, 'max_features': 0.5, 'min_samples_leaf': 10} (22.2 min)
+  f4 PSO-ExtraTrees: inner AUC 0.6175 {'n_estimators': 150, 'max_depth': 23, 'max_features': 0.7627419588980651, 'min_samples_leaf': 1} (5.1 min)
+andmal_app_main_r2_f4_full.npz saved: train=20112 cal=8380 calseen=5029 te=8379 (32.2 min)
+DONE andmal app main 2 full
+aagm flow main 0 full (20000, 74) malware 0.348
+  f0 PSO-XGBoost: inner AUC 0.9467 {'learning_rate': 0.03898907886171614, 'max_depth': 12, 'n_estimators': 326, 'subsample': 0.7449560727203498, 'colsample_bytree': 0.6300676907856} (8.2 min)
+  f0 PSO-LightGBM: inner AUC 0.9462 {'learning_rate': 0.03176293648588374, 'num_leaves': 105, 'n_estimators': 365, 'subsample': 0.6887687063117676, 'colsample_bytree': 0.8084197346917475} (3.4 min)
+  f0 PSO-RF: inner AUC 0.9385 {'n_estimators': 116, 'max_depth': 30, 'max_features': 0.5, 'min_samples_leaf': 2} (7.7 min)
+  f0 PSO-ExtraTrees: inner AUC 0.9342 {'n_estimators': 100, 'max_depth': 26, 'max_features': 1.0, 'min_samples_leaf': 2} (3.8 min)
+  f0 RS-XGBoost: inner AUC 0.9473 {'learning_rate': 0.10430316338775664, 'max_depth': 10, 'n_estimators': 273, 'subsample': 0.9436063712881633, 'colsample_bytree': 0.7361074625809747} (2.8 min)
+  f0 TPE-XGBoost: inner AUC 0.9464 {'learning_rate': 0.06435927381774267, 'max_depth': 12, 'n_estimators': 161, 'subsample': 0.8402481063282081, 'colsample_bytree': 0.9357891672812543} (4.8 min)
+aagm_flow_main_r0_f0_full.npz saved: train=12000 cal=4000 te=4000 (31.1 min)
+  f1 PSO-XGBoost: inner AUC 0.9460 {'learning_rate': 0.12180594512501022, 'max_depth': 12, 'n_estimators': 192, 'subsample': 1.0, 'colsample_bytree': 0.8209781034611686} (4.9 min)
+  f1 PSO-LightGBM: inner AUC 0.9474 {'learning_rate': 0.07810351100612967, 'num_leaves': 255, 'n_estimators': 99, 'subsample': 0.9673149228965965, 'colsample_bytree': 1.0} (2.9 min)
+andmal app main 0 full (41900, 70) malware 0.189
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+DONE andmal app ports 0 small
+andmal app noinitwin 0 small (41900, 68) malware 0.189
+DONE andmal app noinitwin 0 small
+andmal app main 1 full (41900, 70) malware 0.189
+DONE andmal app main 1 full
+andmal app main 2 full (41900, 70) malware 0.189
+DONE andmal app main 2 full
+aagm flow main 0 full (20000, 74) malware 0.348
+  f1 PSO-XGBoost: inner AUC 0.9460 {'learning_rate': 0.12180594512501022, 'max_depth': 12, 'n_estimators': 192, 'subsample': 1.0, 'colsample_bytree': 0.8209781034611686} (29.0 min)
+  f1 PSO-LightGBM: inner AUC 0.9474 {'learning_rate': 0.07810351100612967, 'num_leaves': 255, 'n_estimators': 99, 'subsample': 0.9673149228965965, 'colsample_bytree': 1.0} (2.8 min)
+  f1 PSO-RF: inner AUC 0.9392 {'n_estimators': 134, 'max_depth': 19, 'max_features': 0.5, 'min_samples_leaf': 1} (8.0 min)
+  f1 PSO-ExtraTrees: inner AUC 0.9344 {'n_estimators': 147, 'max_depth': 26, 'max_features': 1.0, 'min_samples_leaf': 2} (4.0 min)
+  f1 RS-XGBoost: inner AUC 0.9456 {'learning_rate': 0.1416490132380258, 'max_depth': 11, 'n_estimators': 162, 'subsample': 0.9813289688578556, 'colsample_bytree': 0.9986863001742443} (3.3 min)
+  f1 TPE-XGBoost: inner AUC 0.9460 {'learning_rate': 0.05013647832648929, 'max_depth': 10, 'n_estimators': 315, 'subsample': 0.8887331149865885, 'colsample_bytree': 0.9199454812579988} (4.8 min)
+aagm_flow_main_r0_f1_full.npz saved: train=12000 cal=4000 te=4000 (52.4 min)
+  f2 PSO-XGBoost: inner AUC 0.9469 {'learning_rate': 0.243177002926015, 'max_depth': 11, 'n_estimators': 89, 'subsample': 0.9405440540469315, 'colsample_bytree': 0.74155847848575} (2.6 min)
+  f2 PSO-LightGBM: inner AUC 0.9496 {'learning_rate': 0.07953771525914885, 'num_leaves': 110, 'n_estimators': 238, 'subsample': 1.0, 'colsample_bytree': 0.5971304325009109} (2.6 min)
+  f2 PSO-RF: inner AUC 0.9417 {'n_estimators': 137, 'max_depth': 17, 'max_features': 0.49173475835617114, 'min_samples_leaf': 1} (8.6 min)
+  f2 PSO-ExtraTrees: inner AUC 0.9391 {'n_estimators': 131, 'max_depth': 21, 'max_features': 1.0, 'min_samples_leaf': 1} (4.2 min)
+  f2 RS-XGBoost: inner AUC 0.9473 {'learning_rate': 0.15589606200764075, 'max_depth': 10, 'n_estimators': 172, 'subsample': 0.965709465953205, 'colsample_bytree': 0.6496029579110121} (2.8 min)
+  f2 TPE-XGBoost: inner AUC 0.9485 {'learning_rate': 0.06340235274658555, 'max_depth': 12, 'n_estimators': 208, 'subsample': 0.9610361482504047, 'colsample_bytree': 0.5745755262011571} (4.2 min)
+aagm_flow_main_r0_f2_full.npz saved: train=12000 cal=4000 te=4000 (25.3 min)
+  f3 PSO-XGBoost: inner AUC 0.9466 {'learning_rate': 0.1153688853043046, 'max_depth': 12, 'n_estimators': 162, 'subsample': 1.0, 'colsample_bytree': 0.6855247775036266} (3.9 min)
+  f3 PSO-LightGBM: inner AUC 0.9478 {'learning_rate': 0.06485617000905702, 'num_leaves': 219, 'n_estimators': 135, 'subsample': 1.0, 'colsample_bytree': 0.7112113494387291} (3.3 min)
+  f3 PSO-RF: inner AUC 0.9398 {'n_estimators': 100, 'max_depth': 16, 'max_features': 0.5, 'min_samples_leaf': 1} (8.3 min)
+  f3 PSO-ExtraTrees: inner AUC 0.9338 {'n_estimators': 228, 'max_depth': 20, 'max_features': 1.0, 'min_samples_leaf': 1} (7.0 min)
+  f3 RS-XGBoost: inner AUC 0.9457 {'learning_rate': 0.06608005299923539, 'max_depth': 9, 'n_estimators': 332, 'subsample': 0.9656384067478448, 'colsample_bytree': 0.8399502390883377} (3.2 min)
+  f3 TPE-XGBoost: inner AUC 0.9469 {'learning_rate': 0.05934201980677594, 'max_depth': 12, 'n_estimators': 276, 'subsample': 0.9793499438166281, 'colsample_bytree': 0.5604213246693708} (4.6 min)
+aagm_flow_main_r0_f3_full.npz saved: train=12000 cal=4000 te=4000 (30.7 min)
+  f4 PSO-XGBoost: inner AUC 0.9413 {'learning_rate': 0.16833318453981616, 'max_depth': 12, 'n_estimators': 112, 'subsample': 0.9788787403845042, 'colsample_bytree': 0.5} (2.3 min)
+  f4 PSO-LightGBM: inner AUC 0.9437 {'learning_rate': 0.07440992207067708, 'num_leaves': 66, 'n_estimators': 330, 'subsample': 1.0, 'colsample_bytree': 0.8749010315748661} (2.5 min)
+andmal app main 0 full (41900, 70) malware 0.189
+DONE andmal app main 0 full
+andmal flow main 0 small (41900, 70) malware 0.189
+DONE andmal flow main 0 small
+andmal app ports 0 small (41900, 72) malware 0.189
+DONE andmal app ports 0 small
+andmal app noinitwin 0 small (41900, 68) malware 0.189
+DONE andmal app noinitwin 0 small
+andmal app main 1 full (41900, 70) malware 0.189
+DONE andmal app main 1 full
+andmal app main 2 full (41900, 70) malware 0.189
+DONE andmal app main 2 full
+aagm flow main 0 full (20000, 74) malware 0.348
+  f4 PSO-XGBoost: inner AUC 0.9413 {'learning_rate': 0.16833318453981616, 'max_depth': 12, 'n_estimators': 112, 'subsample': 0.9788787403845042, 'colsample_bytree': 0.5} (2.3 min)
+  f4 PSO-LightGBM: inner AUC 0.9437 {'learning_rate': 0.07440992207067708, 'num_leaves': 66, 'n_estimators': 330, 'subsample': 1.0, 'colsample_bytree': 0.8749010315748661} (2.5 min)
+  f4 PSO-RF: inner AUC 0.9342 {'n_estimators': 300, 'max_depth': 16, 'max_features': 0.5, 'min_samples_leaf': 1} (14.6 min)
+  f4 PSO-ExtraTrees: inner AUC 0.9326 {'n_estimators': 300, 'max_depth': 21, 'max_features': 1.0, 'min_samples_leaf': 1} (7.7 min)
+  f4 RS-XGBoost: inner AUC 0.9413 {'learning_rate': 0.037219410907077095, 'max_depth': 11, 'n_estimators': 380, 'subsample': 0.8673599550848896, 'colsample_bytree': 0.9222318115981082} (3.1 min)
+  f4 TPE-XGBoost: inner AUC 0.9419 {'learning_rate': 0.06384131949453539, 'max_depth': 11, 'n_estimators': 288, 'subsample': 0.966869862589738, 'colsample_bytree': 0.7431095690057234} (5.0 min)
+aagm_flow_main_r0_f4_full.npz saved: train=12000 cal=4000 te=4000 (35.6 min)
+DONE aagm flow main 0 full
+QUEUE-COMPLETE

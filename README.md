@@ -1,74 +1,50 @@
-# PSO-XGBoost with calibrated triage for Android malware network traffic
+# Calibrated, Cost-Aware Triage of Android Malware Network Traffic on Unseen Applications
 
-Code and results for the paper *"PSO-Tuned XGBoost with Calibrated Probabilities and a Reject Option for Reliable Triage of Android Malware Network Traffic"* (Taha et al., submitted to *Future Internet*).
+Code, data samples, per-fold predictions and results for the revised manuscript
+"Calibrated, Cost-Aware Triage of Android Malware Network Traffic on Unseen Applications"
+(A. A. Taha et al., King Abdulaziz University). The code for the first submission is kept in `legacy/`.
 
-XGBoost tuned by particle swarm optimisation (PSO-XGBoost) is combined with three reliability components:
+## What the study does
+- **CICAndMal2017**, rebuilt from the 2126 public per-application flow files: de-duplicated, at most 20 flows per
+  application (41,900 flows, 2112 apps, 412 malicious). Evaluated by 3 × 5-fold cross-validation **grouped by
+  application**; tuning, fitting and calibration use disjoint application sets, so every test application is unseen.
+- **CIC-AAGM2017**: uniform sample of 20,000 de-duplicated flows at the natural malware share (34.8%); stratified
+  5-fold CV by flow (the dataset has no application identifiers).
+- **Equal-budget tuning** (48 configurations each): PSO, random search and TPE (Optuna) for XGBoost; PSO for
+  LightGBM, random forest and ExtraTrees; default XGBoost, LightGBM, AdaBoost and GBM as references.
+- **Triage layer**: application score = mean flow probability; Platt calibration on held-out applications;
+  workload-constrained deferral (cost-weighted window vs symmetric Chow-type band vs unweighted window);
+  Mondrian conformal prediction; prior-shift analysis at 10/5/1(/0.1)% prevalence; TreeSHAP.
 
-- post-hoc probability calibration (Platt scaling; isotonic regression compared),
-- Chow's two-threshold reject option, which sends a chosen share of flows to an analyst,
-- Mondrian (class-conditional) conformal prediction.
-
-These are evaluated on CICAndMal2017 and CIC-AAGM2017 against XGBoost, LightGBM, AdaBoost and GBM.
-
-## Protocol
-
-Each dataset uses stratified 5-fold cross-validation (seed 42). Within each fold, the training part is split into:
-
-| Split | Share of flows | Used for |
-|---|---|---|
-| FIT | 60% | PSO search and model fitting |
-| CAL | 20% | calibration, reject thresholds and conformal scores |
-| TEST | 20% | reporting only |
-
-PSO settings:
-- 8 particles × 10 iterations, inertia w = 0.7, c1 = c2 = 1.5.
-- Fitness = 1 − mean 3-fold F1 on FIT.
-- Search space: learning rate [0.01, 0.3], maximum depth {3–10}, number of trees {50–300}, subsample [0.6, 1.0].
-
-Statistical tests use the corrected resampled t-test (Nadeau & Bengio, 2003) with Holm adjustment.
-
-## Repository layout
-
+## Layout
 | Path | Content |
-|---|---|
-| `src/common.py` | paths, seed, data loader, baseline settings |
-| `src/prepare_data.py` | builds the two datasets from the original CIC files (see `data/README.md`) |
-| `src/train.py` | Stage 1: PSO search, model fitting, saves CAL/TEST probabilities per fold |
-| `src/analysis.py` | Stage 2: discrimination, calibration, reject option, conformal prediction, statistics, Figures 2–3 |
-| `src/shap_analysis.py` | refits PSO-XGBoost per fold (verifies identical predictions), exact TreeSHAP, Figures 4–5 |
-| `src/fig1_framework.py` | Figure 1 |
-| `results/fold_predictions/` | saved per-fold CAL/TEST probabilities of all models (output of `train.py`) |
-| `results/*.csv` | per-fold metrics and statistical tests behind Tables 3–9 |
-| `results/analysis_report.txt` | printed summary of the analysis |
-| `figures/` | Figures 1–5 of the paper |
+| --- | --- |
+| `src/prepare_cicandmal_app.py` | builds `data/cicandmal_app_K20.parquet` from the per-app CSVs (`Data/<Category>/<Family>/*.pcap_ISCX.csv`) |
+| `src/prepare_aagm.py` | builds `data/aagm_natural20k.parquet` from `TotalFeatures-ISCXFlowMeter.csv` |
+| `src/train_v2.py` | tuning + fitting; writes per-fold probabilities to `predictions/*.npz` (args: dataset protocol features repeat modelset) |
+| `src/queue.sh` | the exact list of training runs used in the paper |
+| `src/analysis_app.py` | application-level analyses (CICAndMal2017) → `results/{A,K,AC,AS,AP,AM,AF,AV}.csv` |
+| `src/analysis_v2.py` | flow-level analyses (both datasets) → `results/{D,C,S,P,M,V}.csv` |
+| `src/prevalence_v2.py` | prevalence analysis → `results/PREV.csv` |
+| `src/stats_v2.py` | corrected repeated k-fold t-tests with Holm adjustment → `results/T.csv` |
+| `src/shap_v2.py` | TreeSHAP + error-prediction test → `results/shap_*.csv`, `figures/shap_*.png` |
+| `src/figs_v2.py` | manuscript figures |
+| `src/manuscript_numbers.py` | computes every number quoted in the manuscript from `results/` and `predictions/` |
+| `results/train_log.txt` | training log with the selected hyperparameters per fold |
 
-`train.py` also trains PSO-LightGBM with the same budget. It is the preliminary tuned-LightGBM comparison mentioned in the limitations and is not included in the paper's tables.
-
-## Reproducing the results
-
+## Reproduce
 ```bash
 pip install -r requirements.txt
-cd src
-python prepare_data.py <CICAndMal2017.csv> <TotalFeatures-ISCXFlowMeter.csv>
-python train.py CICAndMal2017     # about 1 h on 2 CPU cores; resumable per fold
-python train.py CIC-AAGM2017
-python analysis.py
-python shap_analysis.py
-python fig1_framework.py
+python src/prepare_cicandmal_app.py <path-to>/Data 20 data/cicandmal_app_K20.parquet
+python src/prepare_aagm.py <path-to>/TotalFeatures-ISCXFlowMeter.csv data/aagm_natural20k.parquet
+bash src/queue.sh            # resumable; about 30-50 min per fold for the full model set on 2 CPU cores
+python src/analysis_app.py && python src/analysis_v2.py && python src/prevalence_v2.py && python src/stats_v2.py
+python src/shap_v2.py andmal app main full && python src/shap_v2.py andmal app ports small && python src/shap_v2.py aagm flow main full
+python src/figs_v2.py
 ```
+Set `TRIAGE_ROOT` to run from another directory. The prepared data samples and all per-fold predictions are
+included, so the analyses can be rerun without retraining.
 
-The per-fold predictions used in the paper are included. To rerun the analysis and SHAP stages without retraining, prepare the data and skip `train.py`. `analysis.py` alone needs only the saved predictions plus the prepared data, which it uses for the fold sizes.
-
-Environment used for the paper: Python 3.13.16, XGBoost 3.4.1, LightGBM 4.7.0, scikit-learn 1.9.1, SHAP 0.54.1, on a two-core CPU.
-
-## Mapping to the paper
-
-| Paper | File |
-|---|---|
-| Table 3 | `results/pso_params_perfold.csv` |
-| Table 4 | `results/discrimination_perfold.csv` |
-| Table 5 | `results/calibration_perfold.csv` |
-| Tables 6–7 | `results/triage_perfold.csv` |
-| Table 8 | `results/conformal_perfold.csv` |
-| Table 9 | `results/stats.csv` |
-| Section 4.7 | `results/shap_importance.csv`, `results/shap_deferral_summary.csv` |
+## Data sources
+CICAndMal2017 and CIC-AAGM2017 are available from the Canadian Institute for Cybersecurity
+(https://www.unb.ca/cic/datasets/andmal2017.html, https://www.unb.ca/cic/datasets/android-adware.html).

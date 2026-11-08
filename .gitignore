@@ -1,3 +1,3 @@
-data/*.parquet
+data/*_tmp.parquet
 results/fold_predictions/keep20_*
 __pycache__/

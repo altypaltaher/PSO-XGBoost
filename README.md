@@ -29,6 +29,7 @@ Code, data samples, per-fold predictions and results for the revised manuscript
 | `src/stats_v2.py` | corrected repeated k-fold t-tests with Holm adjustment → `results/T.csv` |
 | `src/shap_v2.py` | TreeSHAP + error-prediction test → `results/shap_*.csv`, `figures/shap_*.png` |
 | `src/figs_v2.py` | manuscript figures |
+| `src/extra_checks.py` | capture-day check, alternative aggregations → `results/CAPDAY.csv`, `results/AGG.csv` |
 | `src/manuscript_numbers.py` | computes every number quoted in the manuscript from `results/` and `predictions/` |
 | `results/train_log.txt` | training log with the selected hyperparameters per fold |
 
